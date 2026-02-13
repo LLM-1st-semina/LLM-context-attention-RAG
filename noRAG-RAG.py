@@ -135,11 +135,6 @@ def run_rag_dashboard():
     print("No-RAG 입력 토큰 수:", len(context_no_rag))
     print("RAG 입력 토큰 수:", len(context_rag))
 
-    print("\n" + "="*50)
-
-    print("🤖 AI의 최종 답변 비교")
-    print("="*50)
-
     # 1. No-RAG 답변 (학습 데이터에 없다고 가정)
     print(f"[No-RAG 답변]:")
     if "rag" in query.lower() or "hallucination" in query.lower() or "context" in query.lower():
